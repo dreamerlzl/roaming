@@ -14,6 +14,7 @@ pygmentsCodefencesGuessSyntax = true
 #disqusShortname = "XXX"
 #googleAnalytics = "XXX"
 paginate = 5
+canonifyURLs = true
 
 [Params]
   homeTitle = "Roaming" # Set a different text for the header on the home page
