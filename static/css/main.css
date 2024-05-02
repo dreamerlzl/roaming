@@ -3,10 +3,14 @@
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 18px;
+  font-weight: 500;
   color: #404040;
   position: relative;
-  background: #FFF;
   display: flex;
+  background-image: linear-gradient(transparent 5%, white 65%), url('/roaming/assets/img/cover/rust_bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   flex-flow: column;
   height: 100vh;
 }
@@ -106,12 +110,18 @@ div.panel-body a.list-group-item {
   border: none;
   font-size: 16px;
 }
+
+div.panel-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 div.panel-group .panel {
     border-radius: 0;
+    background: transparent;
+    margin: 5px;
 }
-div.panel-group .panel+.panel {
-    margin-top: 0;
-}
+
 
 div.panel-body a.list-group-item.view-all {
   font-weight: 600;
@@ -157,6 +167,7 @@ figure:not(.dark) img, img.white {
 
 .navbar-custom {
   background: #F5F5F5;
+  opacity: 0.5;
   border-bottom: 1px solid #EAEAEA;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -416,7 +427,7 @@ footer div.disclaimer {
 
 .post-preview {
   padding: 20px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 0px solid #eee;
 }
 @media only screen and (min-width: 768px) {
   .post-preview {
@@ -865,7 +876,7 @@ div.splitbox div.right {
     padding: 15px 25px;
   }
 }
-.disqus-comments button:hover, 
+.disqus-comments button:hover,
 .disqus-comments button:focus {
   color: #FFF;
   background: #0085a1;

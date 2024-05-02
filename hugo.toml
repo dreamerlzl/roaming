@@ -51,13 +51,13 @@ canonifyURLs = true
 [Author]
   # Set only your "username" for default hosts and full URLs otherwise (e.g., "https://MyGitLab.org/username")
   name = "Ziliang Lin"
-  website = "yourwebsite.com"
-  email = "youremail@domain.com"
-  github = "username"
-  linkedin = "username"
-  stackoverflow = "users/XXXXXXX/username"
-  telegram = "username"
-  mastodon = "url"
+  # website = "yourwebsite.com"
+  email = "linzlang@mail2.sysu.edu.cn"
+  github = "dreamerlzl"
+  linkedin = "dreamerlzl"
+  stackoverflow = "users/6306793/ziliang-lin"
+  # telegram = "username"
+  # mastodon = "url"
 
 [[menu.main]]
     name = "Blog"
