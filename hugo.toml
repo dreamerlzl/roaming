@@ -17,6 +17,7 @@ paginate = 5
 canonifyURLs = true
 
 [Params]
+  selfHosted = true
   homeTitle = "Roaming" # Set a different text for the header on the home page
   subtitle = "towards freedom"
   mainSections = ["posts"]
