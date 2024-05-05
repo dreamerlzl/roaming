@@ -6,7 +6,7 @@ tags:
 - review
 ---
 
-一天读完的书评
+过来人给刚踏出象牙塔的人的建议
 
 <!--more-->
 
@@ -33,15 +33,13 @@ tags:
 
 # 怎么看待完美主义; 如何破局
 
-1. 迭代，而不是完美。从我作为一个软件工程师的角度来阐释，就是不要过早优化；不要因为分支不够完美而不approve
-   merge request; acceptable比perfct更好; agile比waterfall更好。
+1. 迭代，而不是完美。从我作为一个软件工程师的角度来阐释，就是不要过早优化；不要因为分支不够完美而不approve merge request;
+   acceptable比perfct更好; agile比waterfall更好。
 
-2. 先尝试用简单成本低的方法尝试解决大问题；当行动的成本不高时，先行动起来达到一个minimum
-   acceptable criteria.
+2. 先尝试用简单成本低的方法尝试解决大问题；当行动的成本不高时，先行动起来达到一个minimum acceptable criteria.
    完美主义有时会成为你不行动下去的借口(这个太难了，我们做不成的)。
 
-3. 没有完美的计划。先行动起来，逐步调整和完善你的计划。没有一劳永逸的软件设计modular
-   design/information hiding，只有continuous refactoring & evolving modular
-   design.
+3. 没有完美的计划。先行动起来，逐步调整和完善你的计划。没有一劳永逸的软件设计modular design/information
+   hiding，只有continuous refactoring & evolving modular design.
 
 4. 成绩是过去的，人是要活在未来的。活在过去并不能为自己的下一步行动和改善现状带来好处。
