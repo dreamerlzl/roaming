@@ -74,3 +74,8 @@ canonifyURLs = true
     name = "About"
     url = "page/about/"
     weight = 3
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    startLevel = 1
