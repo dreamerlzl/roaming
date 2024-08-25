@@ -3,8 +3,8 @@ title: "日本の夏休み"
 
 date: "2023-08-13"
 tags:
-- travel
-- japan
+- travel  
+- Japan
 ---
 
 纪第三次日本旅行: 攻略和感想
