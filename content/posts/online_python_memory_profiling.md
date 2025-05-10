@@ -12,12 +12,11 @@ Live debugging Python process's memory!
 
 # The problem
 
-You just got called because of an outage of an AI/LLM service written in Python
-and you found that is is a memory leak in production. Before restoring the
-service to mitigate the impact, you may want to capture as much context as
-possible and luckily, there are so many libraries/tools for python memory
-profiling in the ecosystem, like
-[scalene](https://github.com/plasma-umass/scalene) or
+You got called due to an outage of AI/LLM services written in Python and it
+turned out to be a memory leak in production. Before restoring the service to
+mitigate the impact, you may want to capture as much context as possible.
+Luckily, there are many libraries/tools for memory profiling in the ecosystem,
+like [scalene](https://github.com/plasma-umass/scalene) or
 [pympler](https://github.com/pympler/pympler):
 
 ```python
