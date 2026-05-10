@@ -21,8 +21,21 @@ body {
   }
 }
 .container[role=main] {
-  margin-bottom:50px;
+  margin-top: 100px;
+  margin-bottom: 50px;
   flex: 1 0 auto;
+}
+.home-container.container[role=main] {
+  margin-top: 70px;
+}
+
+@media only screen and (min-width: 992px) {
+  .content-column {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -33,11 +46,11 @@ body {
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.75;
   margin: 6px 0;
 }
 p + p {
-    margin: 24px 0 6px 0;
+    margin: 24px 0 0 0;
 }
 p a {
   /* text-decoration: underline */
@@ -52,6 +65,13 @@ p a {
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
+  margin-top: 1.6em;
+  margin-bottom: 0.6em;
+}
+.blog-post h1:first-child,
+.blog-post h2:first-child,
+.blog-post h3:first-child {
+  margin-top: 0;
 }
 a {
   color: #008AFF;
@@ -167,7 +187,6 @@ figure:not(.dark) img, img.white {
 
 .navbar-custom {
   background: #F5F5F5;
-  opacity: 0.5;
   border-bottom: 1px solid #EAEAEA;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -427,7 +446,12 @@ footer div.disclaimer {
 
 .post-preview {
   padding: 20px 0;
-  border-bottom: 0px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+@media (prefers-color-scheme: dark) {
+  .post-preview {
+    border-bottom: 1px solid #444;
+  }
 }
 @media only screen and (min-width: 768px) {
   .post-preview {
@@ -943,6 +967,30 @@ h4.see-also {
   .list-group-item {
     background-color: #333;
   }
+  .post-meta,
+  .page-meta {
+    color: #aaa;
+  }
+  .post-meta a,
+  .page-meta a {
+    color: #ccc;
+  }
+  .blog-tags {
+    color: #aaa;
+  }
+  .blog-tags a {
+    color: #50afff;
+  }
+  .intro-header .post-heading h1,
+  .intro-header .page-heading h1 {
+    color: #ddd;
+  }
+  h4.see-also {
+    color: #ddd;
+  }
+  #TableOfContents {
+    border-left-color: #50afff;
+  }
 
   pre.chroma {
     color: white;
@@ -963,6 +1011,31 @@ h4.see-also {
   pre.chroma .ow {
     color: #CC0;
   }
+}
+
+/* --- Table of Contents --- */
+#TableOfContents {
+  border-left: 3px solid #0085a1;
+  padding-left: 1em;
+  margin: 1.5em 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+#TableOfContents ul {
+  list-style: none;
+  padding-left: 1em;
+}
+#TableOfContents a {
+  text-decoration: none;
+  color: #555;
+}
+#TableOfContents a:hover {
+  color: #0085a1;
+}
+
+/* --- Giscus comments --- */
+.giscus-container {
+  padding: 0 30px;
 }
 
 /* --- Make long KaTeX equations scrollable in the x-axis --- */

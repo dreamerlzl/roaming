@@ -13,7 +13,7 @@ pygmentsCodefencesGuessSyntax = true
 #pygmentOptions = "linenos=inline"
 #disqusShortname = "XXX"
 #googleAnalytics = "XXX"
-paginate = 5
+pagination.pagerSize = 5
 canonifyURLs = true
 
 [Params]

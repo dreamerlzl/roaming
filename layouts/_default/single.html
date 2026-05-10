@@ -1,7 +1,7 @@
 {{ define "main" }}
-<div class="container" role="main" style="margin-top: 100px">
+<div class="container" role="main">
   <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 content-column">
       <article role="main" class="blog-post">
         <header class="post-header">
           <h1>{{ .Title }}</h1>
@@ -76,7 +76,7 @@
 
       {{ if (.Params.comments) | or (and (or (not (isset .Params "comments")) (eq .Params.comments nil)) (and
       .Site.Params.comments (ne .Type "page"))) }}
-      {{ if .Site.DisqusShortname }}
+      {{ if .Site.Config.Services.Disqus.Shortname }}
       {{ if .Site.Params.delayDisqus }}
       <div class="disqus-comments">
         <button id="show-comments" class="btn btn-default" type="button">{{ i18n "show" }} <span
@@ -92,9 +92,7 @@
         </script>
       </div>
       {{ else }}
-      <div class="disqus-comments">
-        {{ template "_internal/disqus.html" . }}
-      </div>
+      <div id="disqus_thread"></div>
       {{ end }}
       {{ end }}
       {{ if .Site.Params.staticman }}
@@ -107,7 +105,7 @@
     </div>
   </div>
 </div>
-<div style="padding-left: 30px; padding-right: 30px;">
+<div class="giscus-container">
   <script src="https://giscus.app/client.js" data-repo="dreamerlzl/roaming" data-repo-id="R_kgDOL1kINQ"
     data-category="General" data-category-id="DIC_kwDOL1kINc4CfD5B" data-mapping="pathname" data-strict="0"
     data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="light" data-lang="en"
