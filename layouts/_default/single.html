@@ -15,7 +15,14 @@
             {{ end }}
           </p>
         </header>
-        {{ .TableOfContents }}
+        {{ with .TableOfContents }}
+        <aside class="post-toc-wrapper" aria-label="Table of contents">
+          <details class="post-toc" open>
+            <summary>Contents</summary>
+            {{ . }}
+          </details>
+        </aside>
+        {{ end }}
 
         {{ .Content }}
 

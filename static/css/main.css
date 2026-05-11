@@ -988,10 +988,6 @@ h4.see-also {
   h4.see-also {
     color: #ddd;
   }
-  #TableOfContents {
-    border-left-color: #50afff;
-  }
-
   pre.chroma {
     color: white;
     background-color: #444;
@@ -1016,21 +1012,115 @@ h4.see-also {
 /* --- Table of Contents --- */
 #TableOfContents {
   border-left: 3px solid #0085a1;
-  padding-left: 1em;
-  margin: 1.5em 0;
+  padding: 0.55em 0.8em 0.55em 1em;
+  margin: 0;
   font-size: 15px;
-  line-height: 1.6;
+  line-height: 1.75;
 }
 #TableOfContents ul {
   list-style: none;
   padding-left: 1em;
+  margin: 0;
+}
+#TableOfContents > ul {
+  padding-left: 0;
 }
 #TableOfContents a {
+  display: inline-block;
   text-decoration: none;
   color: #555;
+  overflow-wrap: anywhere;
 }
 #TableOfContents a:hover {
   color: #0085a1;
+}
+#TableOfContents a:focus {
+  color: #0085a1;
+  outline: 2px solid #0085a1;
+  outline-offset: 2px;
+}
+.post-toc-wrapper {
+  margin: 1.5em 0;
+}
+.post-toc {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+.post-toc summary {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 0.6em 1em;
+  cursor: pointer;
+  user-select: none;
+}
+.post-toc[open] summary {
+  border-bottom: 1px solid #e0e0e0;
+}
+@media only screen and (min-width: 768px) {
+  .post-toc summary {
+    display: none;
+    pointer-events: none;
+    list-style: none;
+  }
+  .post-toc summary::-webkit-details-marker {
+    display: none;
+  }
+  .post-toc > :not(summary) {
+    display: block !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .blog-post {
+    position: relative;
+  }
+  .post-toc-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: calc(50% - 50vw + 1.5em);
+    width: 210px;
+    margin: 0;
+  }
+  #TableOfContents {
+    font-size: 15px;
+  }
+  .post-toc {
+    position: sticky;
+    top: 50vh;
+    max-height: calc(100vh - 3em);
+    overflow-y: auto;
+    transform: translateY(-50%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  #TableOfContents {
+    border-left-color: #50afff;
+  }
+  #TableOfContents a {
+    color: #b0b0b0;
+  }
+  #TableOfContents a:hover {
+    color: #50afff;
+  }
+  #TableOfContents a:focus {
+    color: #50afff;
+    outline-color: #50afff;
+  }
+  .post-toc {
+    border-color: #444;
+  }
+  .post-toc summary {
+    color: #ddd;
+  }
+  .post-toc[open] summary {
+    border-bottom-color: #444;
+  }
+}
+@media only screen and (min-width: 768px) and (prefers-color-scheme: dark) {
+  .post-toc summary {
+    border-bottom-color: #444;
+  }
 }
 
 /* --- Giscus comments --- */
