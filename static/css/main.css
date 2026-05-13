@@ -185,6 +185,15 @@ figure:not(.dark) img, img.white {
 
 /* --- Navbar --- */
 
+:root {
+  /* Fixed .navbar-fixed-top: ~51px when short, ~91px when tall + padding (see .intro-header). */
+  --site-navbar-offset: 100px;
+}
+
+html {
+  scroll-padding-top: calc(var(--site-navbar-offset) + env(safe-area-inset-top, 0px));
+}
+
 .navbar-custom {
   background: #F5F5F5;
   border-bottom: 1px solid #EAEAEA;
@@ -1087,10 +1096,9 @@ h4.see-also {
   }
   .post-toc {
     position: sticky;
-    top: 50vh;
-    max-height: calc(100vh - 3em);
+    top: calc(var(--site-navbar-offset) + env(safe-area-inset-top, 0px));
+    max-height: calc(100vh - var(--site-navbar-offset) - 1.5em - env(safe-area-inset-top, 0px));
     overflow-y: auto;
-    transform: translateY(-50%);
   }
 }
 @media (prefers-color-scheme: dark) {
