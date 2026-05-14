@@ -1175,8 +1175,9 @@ h4.see-also {
   }
   .post-toc {
     position: sticky;
-    top: calc(var(--site-navbar-offset) + env(safe-area-inset-top, 0px));
-    max-height: calc(100vh - var(--site-navbar-offset) - 1.5em - env(safe-area-inset-top, 0px));
+    top: 50vh;
+    transform: translateY(-50%);
+    max-height: calc(100vh - var(--site-navbar-offset) - var(--site-navbar-offset) - 1.5em - env(safe-area-inset-top, 0px));
     overflow-y: auto;
   }
 }
