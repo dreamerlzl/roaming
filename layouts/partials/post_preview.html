@@ -1,19 +1,22 @@
 <article class="post-preview">
-    <a href="{{ .Permalink }}">
-        <h2 class="post-title">{{ .Title }}</h2>
-        {{ if .Params.subtitle }}
-        <h3 class="post-subtitle">
-            {{ .Params.subtitle }}
-        </h3>
-        {{ end }}
-        {{ if .Params.image }}
-        <img src="{{ .Params.image }}" alt="{{ .Title }}" class="img-title" />
-        {{ end }}
-        {{ if .Params.video }}
-        <video loop autoplay muted playsinline class="img-title">
-            <source src="{{ .Params.video }}">
-        </video>
-        {{ end }}
+    <a href="{{ .Permalink }}" class="post-preview-title">
+        <div class="post-preview-media">
+            {{ if .Params.video }}
+            <video loop autoplay muted playsinline aria-hidden="true">
+                <source src="{{ .Params.video }}">
+            </video>
+            {{ else }}
+            <img src="{{ .Params.image | default "/assets/img/cover/rust_bg.jpg" }}" alt="" />
+            {{ end }}
+        </div>
+        <div class="post-preview-heading">
+            <h2 class="post-title">{{ .Title }}</h2>
+            {{ if .Params.subtitle }}
+            <h3 class="post-subtitle">
+                {{ .Params.subtitle }}
+            </h3>
+            {{ end }}
+        </div>
     </a>
 
     <p class="post-meta">

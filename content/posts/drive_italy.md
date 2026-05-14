@@ -5,6 +5,7 @@ tags:
  - travel
  - Italy
  - Swiss
+image: "https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/rigi2.jpg"
 ---
 
 2025最好的礼物
