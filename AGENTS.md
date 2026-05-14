@@ -4,6 +4,8 @@
 
 ## tools
 - justfile
+- use playwright-cli when generating repeatable, deterministic multi-step test scripts, running visual regression tests, or need massive cross-browser coverage (Webkit, Firefox, Chrome) for traditional CI/CD pipelines.
+  - otherwise, use agent-browser
 
 ## Agent skills
 
