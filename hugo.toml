@@ -1,10 +1,8 @@
 baseurl = "https://dreamerlzl.github.io/roaming"
 DefaultContentLanguage = "en"
 title = "Roaming towards freedom"
-# Using theme as git submodule
+# BeautifulHugo is a pinned git submodule under themes/beautifulhugo.
 theme = "beautifulhugo"
-# Or when using theme as hugo module
-# theme = "github.com/halogenica/beautifulhugo"
 pygmentsStyle = "trac"
 pygmentsUseClasses = true
 pygmentsCodeFences = true
@@ -49,7 +47,7 @@ canonifyURLs = true
 #  src = "img/hexagon.jpg"
 #  desc = "Hexagon"
 
-[Author]
+[Params.Author]
   # Set only your "username" for default hosts and full URLs otherwise (e.g., "https://MyGitLab.org/username")
   name = "Ziliang Lin"
   # website = "yourwebsite.com"
