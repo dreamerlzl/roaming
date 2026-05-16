@@ -6,7 +6,7 @@
                 <source src="{{ .Params.video }}">
             </video>
             {{ else }}
-            <img src="{{ .Params.image | default "/assets/img/cover/rust_bg.jpg" }}" alt="" />
+            <img src="{{ partial "resolve-image.html" (dict "image" .Params.image "site" .Site) }}" alt="" />
             {{ end }}
         </div>
         <div class="post-preview-heading">

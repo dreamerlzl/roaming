@@ -5,7 +5,7 @@ tags:
  - travel
  - Italy
  - Swiss
-image: "https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/rigi2.jpg"
+image: "rigi2.jpg"
 ---
 
 2025最好的礼物
@@ -16,11 +16,11 @@ image: "https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/rigi2.jpg"
 
 - 虽然不懂天主教，但是在梵蒂冈博物馆看到馆藏陈列的震撼
 - 清晨在Zermatt收拾好行囊, 一路像怪物猎人跑图那样向着Matthorn峰进发
-  {{<figure src="https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/zmutt.jpg">}}
+  {{<figure src="zmutt.jpg">}}
 - 从Rigi Mountain坐缆车到Weggis欣赏Lake Lucern的震撼，美到窒息
-  {{<figure src="https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/rigi.jpg">}}
+  {{<figure src="rigi.jpg">}}
 - 大晚上走在罗马的街道上，也能吃到美味的意面和欣赏到历史遗迹和街景
-  {{<figure src="https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/rome_night.jpg">}}
+  {{<figure src="rome_night.jpg">}}
 - 意大利同时拥有美食，人文和自然风光的顶峰，同时价格也算是欧洲里面便宜的，作为踏上欧洲的第一趟旅途，我很满意。
 
 # 开始计划
@@ -37,7 +37,7 @@ image: "https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/rigi2.jpg"
     具体线路可以参考[这里](https://zermatt.swiss/en/activities/hiking-mountaineering/hiking/hiking-trails?Tour_Distance__c=1+-+5+km&Tour_Distance__c=5+-+10+km)
   - 不过夏天的马特洪峰没有雪会是裸山
 
-{{<figure src="https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/zermatt_sunshine.jpg">}}
+{{<figure src="zermatt_sunshine.jpg">}}
 
 ## 签证
 
@@ -124,7 +124,7 @@ image: "https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/rigi2.jpg"
 
 ### 自驾
 
-{{< figure src="https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/car.jpg" >}}
+{{< figure src="car.jpg" >}}
 
 #### 证件
 
@@ -137,7 +137,7 @@ image: "https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/rigi2.jpg"
     不过可以[网购](https://www.asfinag.at/en/toll/vignette/),　有日票
   - 意大利是类似国内的高速费
 
-{{<figure src="https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/innsbruck.jpg">}}
+{{<figure src="innsbruck.jpg">}}
 
 #### 体验
 
@@ -151,11 +151,11 @@ image: "https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/rigi2.jpg"
   - 车道比较少市区路况复杂，需要有比较好的驾驶经验。
   - 瑞士的停车费很贵, 苏黎世停一晚我们花了20+ CHF (接近200人民币)
 
-{{<figure src="https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/swiss_road.jpg" >}}
+{{<figure src="swiss_road.jpg" >}}
 
 - 瑞士自驾不时需要开车上火车经过穿山铁道, 这个票可以在[这里](https://www.bls.ch/en)买, 一年内任意时刻都可以用
 
-{{<figure src="https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/train.jpg">}}
+{{<figure src="train.jpg">}}
 
 ## 住宿
 
@@ -166,7 +166,7 @@ image: "https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/rigi2.jpg"
 - 意大利也有[城堡住](https://en.escapio.com/castle-hotels/italy)
 - [还有很多特色住宿](https://www.doubao.com/thread/w0789c4de8e75d66b)
 
-{{<figure src="https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/zurich_housing.jpg" caption="我们苏黎世的住宿" >}}
+{{<figure src="zurich_housing.jpg" caption="我们苏黎世的住宿" >}}
 
 # 个人向安利
 
@@ -178,13 +178,13 @@ image: "https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/rigi2.jpg"
 - 各种圣母堂, 这个不同于教堂，而且游客很少(图为金碧地利圣母堂)
 
 {{< figure
-src="https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/mmexport1746872438420.jpg"
+src="mmexport1746872438420.jpg"
 >}}
 
 - 各种小红书查不到的教堂，例如十二宗徒圣殿
 
 {{< figure
-src="https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/apostoli.jpg">}}
+src="apostoli.jpg">}}
 
 - 维托里亚诺/Vittoriano, 就在斗兽场附近
   {{<figure src="https://www.turismoroma.it/sites/default/files/vittoriano%205.jpg" >}}
@@ -199,15 +199,15 @@ src="https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/apostoli.jpg">}}
 ## 威尼斯
 
 - 建议最早进岛, 直奔圣马可广场, 这个时候人少出片 {{< figure
-  src="https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/venice_piazza.jpg">}}
+  src="venice_piazza.jpg">}}
 - gondola需要提前预约，市场价一般是20-30分钟一个人80+欧元
 - 如果不坐gondola, 水上巴士体验也很不错
 - 在圣马可钟楼顶看夕阳会很美
-  {{<figure src="https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/bell_tower.jpg" >}}
+  {{<figure src="bell_tower.jpg" >}}
 - 晚上威尼斯会开灯，出片！所以待到晚上再走也是可以的哦
 - 一定要找机会试试龙虾意面和海鲜拼盘
 
-{{<figure src="https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/seafood_pasta.jpg" >}}
+{{<figure src="seafood_pasta.jpg" >}}
 
 ## 苏黎世
 
@@ -217,7 +217,7 @@ src="https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/apostoli.jpg">}}
 - 适合住1-2晚
 - 附近的卢塞恩Lucern, 因特拉肯Interlaken在天气好的时候一定要去
 
-{{<figure src="https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/rigi2.jpg" >}}
+{{<figure src="rigi2.jpg" >}}
 
 ## 米兰
 
@@ -230,7 +230,7 @@ src="https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/apostoli.jpg">}}
 - 是瑞士的首都，不过核心区是一个小城镇的感觉!
 - 可以逛半天到一天
 
-{{<figure src="https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/bern.jpg">}}
+{{<figure src="bern.jpg">}}
 
 ## 采尔马特
 
@@ -241,7 +241,7 @@ src="https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/apostoli.jpg">}}
   - 这次我去了1)和自己看地图看出来的一条线: Zermatt -> Zmutt -> Furi -> 缆车回到Zermatt
 - 如果不确定一个路线的情况，可以看网上的实时摄像头[webcam](https://zermatt.swiss/en/info/webcams)
 
-{{<figure src="https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/to_zmutt.jpg"
+{{<figure src="to_zmutt.jpg"
   >}}
 
 # 临行
@@ -272,5 +272,5 @@ src="https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/apostoli.jpg">}}
 - 孤独星球
 - 背包客栈
 
-{{<figure src="https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/venice_shop.jpg" >}}
-{{<figure src="https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev/colder.jpg" >}}
+{{<figure src="venice_shop.jpg" >}}
+{{<figure src="colder.jpg" >}}

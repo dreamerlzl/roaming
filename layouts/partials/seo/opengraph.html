@@ -4,7 +4,8 @@
 {{- with .Description | default .Params.subtitle | default .Summary }}
 <meta property="og:description" content="{{ . }}">
 {{- end }}
-{{- with .Params.share_img | default .Params.image | default .Site.Params.logo }}
+{{- $ogImage := partial "resolve-image.html" (dict "image" (.Params.share_img | default .Params.image) "site" .Site "default" "") -}}
+{{- with $ogImage | default .Site.Params.logo }}
 <meta property="og:image" content="{{ . | absURL }}" />
 {{- end }}
 {{- with .Site.Params.fb_app_id }}

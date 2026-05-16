@@ -1,0 +1,11 @@
+{{- $src := .image -}}
+{{- $default := .default | default "/assets/img/cover/rust_bg.jpg" -}}
+{{- if not $src -}}
+  {{- $default -}}
+{{- else if or (hasPrefix $src "http://") (hasPrefix $src "https://") (hasPrefix $src "/") -}}
+  {{- $src -}}
+{{- else if .site.Params.postImageBaseURL -}}
+  {{- printf "%s/%s" (strings.TrimSuffix "/" .site.Params.postImageBaseURL) $src -}}
+{{- else -}}
+  {{- $src -}}
+{{- end -}}

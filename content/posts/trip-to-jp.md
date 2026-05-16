@@ -5,6 +5,7 @@ date: "2023-08-13"
 tags:
 - travel
 - Japan
+image: "2023_japan_enoshima.jpg"
 ---
 
 纪第三次日本旅行: 攻略和感想
