@@ -163,6 +163,32 @@ img {
   margin: auto;
   max-width: 100%;
 }
+.blog-post {
+  font-weight: 700;
+}
+.blog-post .box {
+  margin: 2em 0;
+}
+.blog-post .box figure img {
+  border-radius: 4px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+.blog-post .box figcaption {
+  text-align: center;
+  font-size: 0.85em;
+  font-weight: 700;
+  color: #808080;
+  margin-top: 0.5em;
+  font-style: italic;
+}
+@media (prefers-color-scheme: dark) {
+  .blog-post .box figure img {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+  }
+  .blog-post .box figcaption {
+    color: #aaa;
+  }
+}
 @media (prefers-color-scheme: dark) {
 figure:not(.dark) img, img.white {
   background-color: white;
