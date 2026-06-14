@@ -15,7 +15,7 @@
         {{ range .Site.Menus.main.ByWeight }}
           {{ if .HasChildren }}
             <li class="navlinks-container">
-              <a class="navlinks-parent" role="button" tabindex="0">{{ .Name }}</a>
+              <a class="navlinks-parent" role="button" tabindex="0" aria-expanded="false" aria-haspopup="true">{{ .Name }}</a>
               <div class="navlinks-children">
                 {{ range .Children }}
                   <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
@@ -32,7 +32,7 @@
         {{ if hugo.IsMultilingual }}
           {{ if ge (len .Site.Languages) 3 }}
             <li class="navlinks-container">
-              <a class="navlinks-parent" role="button" tabindex="0">{{ i18n "languageSwitcherLabel" }}</a>
+              <a class="navlinks-parent" role="button" tabindex="0" aria-expanded="false" aria-haspopup="true">{{ i18n "languageSwitcherLabel" }}</a>
               <div class="navlinks-children">
                 {{ range .Translations }}
                   {{ if not (eq .Lang $.Site.Language.Lang) }}
@@ -54,8 +54,8 @@
 
         {{ if isset .Site.Params "gcse" }}
           <li>
-            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;">
-              <span class="hidden-sm hidden-md hidden-lg">{{ i18n "gcseLabelShort" }}</span> <span id="searchGlyph" class="glyphicon glyphicon-search"></span>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" aria-label="{{ i18n "gcseLabelLong" . }}">
+              <span class="hidden-sm hidden-md hidden-lg">{{ i18n "gcseLabelShort" }}</span> <span id="searchGlyph" class="glyphicon glyphicon-search" aria-hidden="true"></span>
             </a>
           </li>
         {{ end }}
@@ -66,7 +66,7 @@
       <div class="avatar-container">
         <div class="avatar-img-border">
           <a title="{{ .Site.Title }}" href="{{ "" | absLangURL }}">
-            <img class="avatar-img" src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" />
+            <img class="avatar-img" src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" width="100" height="100" />
           </a>
         </div>
       </div>

@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <div role="main" class="container home-container">
+  <main id="main-content" role="main" class="container home-container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 content-column">
         {{ with .Content }}
@@ -10,6 +10,11 @@
 
         <div class="posts-list">
           {{ $pag := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+          {{ if not $pag.Pages }}
+          <div class="well text-center">
+            <p>{{ i18n "noPostsFound" | default "No posts found." }}</p>
+          </div>
+          {{ end }}
           {{ range $pag.Pages }}
             {{ partial "post_preview" . }}
           {{ end }}
@@ -31,5 +36,5 @@
         {{ end }}
       </div>
     </div>
-  </div>
+  </main>
 {{ end }}

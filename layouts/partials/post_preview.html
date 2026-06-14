@@ -2,11 +2,11 @@
     <a href="{{ .Permalink }}" class="post-preview-title">
         <div class="post-preview-media">
             {{ if .Params.video }}
-            <video loop autoplay muted playsinline aria-hidden="true">
+            <video loop autoplay muted playsinline aria-hidden="true" width="96" height="96">
                 <source src="{{ .Params.video }}">
             </video>
             {{ else }}
-            <img src="{{ partial "resolve-image.html" (dict "image" .Params.image "site" .Site) }}" alt="" />
+            <img src="{{ partial "resolve-image.html" (dict "image" .Params.image "site" .Site) }}" alt="" width="96" height="96" />
             {{ end }}
         </div>
         <div class="post-preview-heading">

@@ -25,7 +25,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
  <!-- Site Title, Description, Author, and Favicon -->
 
@@ -49,9 +49,12 @@
 {{- with .Site.Params.favicon }}
   <link href='{{ . | absURL }}' rel='icon' type='image/x-icon'/>
 {{- end -}}
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#faf8f4">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#141618">
 <!-- Hugo Version number -->
   {{ hugo.Generator -}}
 <!-- Links and stylesheets -->
+  <link rel="preconnect" href="https://pub-efa5ab0e02644f31b7c8e8222e1f304b.r2.dev">
   <link rel="alternate" href="{{ "index.xml" | absLangURL }}" type="application/rss+xml" title="{{ .Site.Title }}">
 
   {{- if .Site.Params.selfHosted -}}

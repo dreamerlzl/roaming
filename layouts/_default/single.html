@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="container" role="main">
+<main id="main-content" class="container" role="main">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 content-column">
       <article role="main" class="blog-post">
@@ -51,7 +51,7 @@
         {{ end }}
 
         {{ if $.Scratch.Get "has_related" }}
-        <h4 class="see-also">{{ i18n "seeAlso" }}</h4>
+        <h3 class="see-also">{{ i18n "seeAlso" }}</h3>
         <ul>
           {{ $num_to_show := .Site.Params.related_content_limit | default 5 }}
           {{ range first $num_to_show (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink"
@@ -112,7 +112,7 @@
 
     </div>
   </div>
-</div>
+</main>
 <div class="giscus-container">
   <script src="https://giscus.app/client.js" data-repo="dreamerlzl/roaming" data-repo-id="R_kgDOL1kINQ"
     data-category="General" data-category-id="DIC_kwDOL1kINc4CfD5B" data-mapping="pathname" data-strict="0"

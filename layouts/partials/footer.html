@@ -17,13 +17,13 @@
             {{- if isset $.Site.Params.Author .id }}
               <li>
 		{{ if or ( hasPrefix ( index $.Site.Params.Author .id ) "http://" ) ( hasPrefix ( index $.Site.Params.Author .id ) "https://" ) }}
-		  <a {{ if .rel }}rel="{{ .rel }}"{{- end -}} href="{{ printf "%s" (index $.Site.Params.Author .id) }}" title="{{ .title }}">
+		  <a {{ if .rel }}rel="{{ .rel }}"{{- end -}} href="{{ printf "%s" (index $.Site.Params.Author .id) }}" title="{{ .title }}" aria-label="{{ .title }}">
 		{{ else }}
-		  <a {{ if .rel }}rel="{{ .rel }}"{{- end -}} href="{{ printf .url (index $.Site.Params.Author .id) }}" title="{{ .title }}">
+		  <a {{ if .rel }}rel="{{ .rel }}"{{- end -}} href="{{ printf .url (index $.Site.Params.Author .id) }}" title="{{ .title }}" aria-label="{{ .title }}">
 		{{ end }}
                   <span class="fa-stack fa-lg">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="{{ .icon }} fa-stack-1x fa-inverse"></i>
+                    <i class="fas fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="{{ .icon }} fa-stack-1x fa-inverse" aria-hidden="true"></i>
                   </span>
                 </a>
               </li>
@@ -31,10 +31,10 @@
           {{ end }}
           {{ if .Site.Params.rss }}
           <li>
-            <a href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" title="RSS">
+            <a href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" title="RSS" aria-label="RSS">
               <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                <i class="fas fa-circle fa-stack-2x" aria-hidden="true"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse" aria-hidden="true"></i>
               </span>
             </a>
           </li>
@@ -136,7 +136,7 @@
 </script>
 <noscript>
 <!-- Piwik Image Tracker -->
-<img src="http://{{ .Site.Params.piwik.server }}/piwik.php?idsite={{ .Site.Params.piwik.id }}&amp;rec=1" style="border:0" alt="" />
+<img src="http://{{ .Site.Params.piwik.server }}/piwik.php?idsite={{ .Site.Params.piwik.id }}&amp;rec=1" style="border:0" alt="" width="1" height="1" />
 <!-- End Piwik -->
 </noscript>
 <!-- End Piwik Code -->

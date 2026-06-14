@@ -2,13 +2,13 @@
 
 {{ $data := .Data }}
 
-<div class="container" role="main">
+<main id="main-content" class="container" role="main">
   <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 content-column">
     <article class="post-preview">
       <div class="panel-group" id="accordion">
         {{ range $key, $value := .Data.Terms.ByCount }}
           <div class="panel panel-default">
-            <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapse{{ $value.Name | anchorize }}" data-parent="#accordion">
+            <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapse{{ $value.Name | anchorize }}" data-parent="#accordion" aria-expanded="false">
                 <div class="panel-heading" id="header{{ $value.Name | anchorize }}">
                   <h4 class="panel-title">
                       {{ $value.Name }}
@@ -32,7 +32,7 @@
       </div>
     </article>
   </div>
-</div>
+</main>
 
 
 {{ end }}
