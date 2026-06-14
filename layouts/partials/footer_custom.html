@@ -1,4 +1,54 @@
-<!--
-If you want to include any custom html just before </body>, put it in /layouts/partials/footer_custom.html
-Do not put anything in this file - it's only here so that hugo won't throw an error if /layouts/partials/footer_custom.html doesn't exist.
--->
+{{- if and (not hugo.IsServer) .Site.Params.goatcounter }}
+{{- $path := (urls.Parse .Permalink).Path }}
+<script data-goatcounter="{{ .Site.Params.goatcounter }}/count" defer src="{{ "js/goatcounter.js" | absURL }}"></script>
+<noscript>
+  <img src="{{ .Site.Params.goatcounter }}/count?p={{ $path | urlquery }}&amp;s=0&amp;b=0" width="1" height="1" alt="">
+</noscript>
+<script defer>
+(function () {
+  var base = "{{ .Site.Params.goatcounter }}";
+
+  function showCount(el, value) {
+    el.textContent = value || "0";
+  }
+
+  function loadCounts() {
+    document.querySelectorAll(".goatcounter-views[data-goatcounter-path]").forEach(function (wrap) {
+      var path = wrap.dataset.goatcounterPath.replace(/\/$/, "");
+      var el = wrap.querySelector(".goatcounter-count");
+      if (!el) return;
+
+      fetch(base + "/counter/" + encodeURIComponent(path) + ".json")
+        .then(function (response) {
+          return response.json().then(function (data) {
+            return { ok: response.ok, data: data };
+          });
+        })
+        .then(function (result) {
+          showCount(el, result.data.count);
+        })
+        .catch(function () {
+          showCount(el, "0");
+        });
+    });
+  }
+
+  function waitForGoatcounter(attempts) {
+    attempts = attempts || 0;
+    if (window.goatcounter && window.goatcounter.count) {
+      loadCounts();
+      return;
+    }
+    if (attempts >= 100) {
+      document.querySelectorAll(".goatcounter-count").forEach(function (el) {
+        el.textContent = "0";
+      });
+      return;
+    }
+    setTimeout(function () { waitForGoatcounter(attempts + 1); }, 100);
+  }
+
+  waitForGoatcounter();
+})();
+</script>
+{{- end }}

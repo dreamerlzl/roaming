@@ -11,6 +11,7 @@
   {{ if .Site.Params.wordCount }}
     &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;{{ .WordCount }}&nbsp;{{ i18n "words" }}
   {{ end }}
+  {{ partial "goatcounter-view-count.html" . }}
   {{ if not .Site.Params.hideAuthor }}
     {{ if .Params.author }}
       {{ if reflect.IsSlice .Params.author }}

@@ -1,0 +1,6 @@
+{{- if .Site.Params.goatcounter }}
+{{- $path := (urls.Parse .Permalink).Path }}
+<span class="goatcounter-views" data-goatcounter-path="{{ $path }}">
+  &nbsp;|&nbsp;<i class="fas fa-eye" aria-hidden="true"></i>&nbsp;<span class="goatcounter-count">—</span>&nbsp;views
+</span>
+{{- end }}

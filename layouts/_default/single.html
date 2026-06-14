@@ -13,6 +13,7 @@
             <a href="{{ $.Site.LanguagePrefix | absURL }}/tags/{{ . | urlize }}/">#{{ . }}</a>
             {{ end }}
             {{ end }}
+            {{ partial "goatcounter-view-count.html" . }}
           </p>
         </header>
         {{ with .TableOfContents }}
